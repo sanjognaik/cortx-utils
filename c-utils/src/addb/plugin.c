@@ -104,6 +104,20 @@ static const struct entity_attrs_items {
   [PEA_SETATTR_RES_MIN] = { .str = "set_attribute_result_minor_code" },
   [PEA_SETATTR_RES_RC] = { .str = "set_attribute_result" },
 
+  [PEA_OPEN_RES_MAJ] = { .str = "open_result_major_code" },
+  [PEA_OPEN_RES_MIN] = { .str = "open_result_minor_code" },
+  [PEA_OPEN_RES_RC] = { .str = "open_result" },
+
+  [PEA_STATUS_RES_RC] = { .str = "status_result" },
+
+  [PEA_CLOSE_RES_MAJ] = { .str = "close_result_major_code" },
+  [PEA_CLOSE_RES_MIN] = { .str = "close_result_minor_code" },
+  [PEA_CLOSE_RES_RC] = { .str = "close_result" },
+
+  [PEA_REOPEN_RES_MAJ] = { .str = "reopen_result_major_code" },
+  [PEA_REOPEN_RES_MIN] = { .str = "reopen_result_minor_code" },
+  [PEA_REOPEN_RES_RC] = { .str = "reopen_result" },
+
   [PEA_ACCESS_FLAGS] = { .str = "access_flag" },
   [PEA_ACCESS_RES_RC] = { .str = "access_result" },
 
@@ -205,6 +219,11 @@ static const struct function_tag_items {
   [PFT_FSAL_READDIR] = { .str = "fsal_readdir" },
   [PFT_FSAL_RMDIR] = { .str = "fsal_rmdir" },
   [PFT_FSAL_LOOKUP] = { .str = "fsal_lookup" },
+  [PFT_FSAL_OPEN] = { .str = "fsal_open" },
+  [PFT_FSAL_OPEN] = { .str = "fsal_status" },
+  [PFT_FSAL_OPEN] = { .str = "fsal_close" },
+  [PFT_FSAL_OPEN] = { .str = "fsal_reopen" },
+  [PFT_FSAL_OPEN] = { .str = "fsal_commit" },
 
   [PFT_KVS_INIT] = { .str = "kvs_init" },
   [PFT_KVS_FINI] = { .str = "kvs_finish" },
@@ -223,6 +242,11 @@ static const struct function_tag_items {
   [PFT_CFS_RMDIR] = { .str = "cfs_rmdir" },
   [PFT_CFS_READDIR] = { .str = "cfs_readdir" },
   [PFT_CFS_LOOKUP] = { .str = "cfs_lookup" },
+  [PFT_CFS_OPEN] = { .str = "cfs_open" },
+  [PFT_CFS_STATUS] = { .str = "cfs_status" },
+  [PFT_CFS_CLOSE] = { .str = "cfs_close" },
+  [PFT_CFS_REOPEN] = { .str = "cfs_reopen" },
+  [PFT_CFS_COMMIT] = { .str = "cfs_commit" },
 
   [PFT_DSTORE_GET] = { .str = "dstore_get" },
   [PFT_DSTORE_PREAD] = { .str = "dstore_pread" },
